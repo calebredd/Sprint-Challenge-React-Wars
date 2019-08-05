@@ -15,8 +15,8 @@ const App = () => {
 
   useEffect(() => {
     axios
-      // .get("https://swapi.co/api/people")
-      .get("db.json")
+      .get("https://swapi.co/api/people")
+      // .get("db.json")
       .then(api => {
         console.log(api.data.results);
         // console.log(api);
