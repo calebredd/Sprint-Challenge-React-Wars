@@ -25,15 +25,15 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+    React bridges the gap between bouncing objects back and forth between CSS, Javascript and HTML. It allows live updates to be done to the DOM through rendering effects as they are updated rather than reloading the entire page again.
 - [ ] What does it mean to _think_ in react?
-
+    Use props to manage live updates and pass variables between components. 
 - [ ] Describe state.
-
+    State is the current status of an object on the page and can be manipulated. It is the content that will be acted upon and changed as the user interacts with the site.
 - [ ] Describe props.
-
+    Props are how information is passed between components in react.
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
-
+    side Effects are props and values externally imported outside of the site which are then updated in real time through the use of props and states. 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
