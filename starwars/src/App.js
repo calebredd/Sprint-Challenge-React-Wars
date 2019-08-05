@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "./components/Card";
+import CharacterCard from "./components/CharacterCard";
+import { Container, Card} from "semantic-ui-react";
 
 import "./App.css";
 
@@ -22,7 +23,6 @@ const App = () => {
         const list = Object.values(api.data.results);
         setCharacters(list);
 
-
         // api.data.results.forEach((character)=>{
         // setCharacters(characters+character);
         // });
@@ -33,11 +33,13 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div className="Cards">
-        {characters.map(character => (
-          <Card key={character.name} character={character} />
-        ))}
-      </div>
+      <Container fluid className="Cards">
+        <Card.Group>
+          {characters.map(character => (
+            <CharacterCard key={character.name} character={character} />
+          ))}
+        </Card.Group>
+      </Container>
     </div>
   );
 };
